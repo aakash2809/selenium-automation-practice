@@ -9,6 +9,10 @@ class HomePage {
     navigateToTheTestRoom() {
         driver.get('https://www.thetestroom.com/webapp/');
     }
+
+    clickOnAdotionLink() {
+        driver.findElement(By.css('[name=nav_adopt]')).click();
+    }
 }
 
 module.exports = new HomePage();
