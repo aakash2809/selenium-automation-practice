@@ -6,7 +6,7 @@ var BasePage = require('./base')
 class HomePage extends BasePage {
 
     clickOnAdotionLink() {
-        this.driver.findElement(By.css('[name=nav_adopt]')).click();
+        driver.findElement(By.css('[name=nav_adopt]')).click();
     }
 }
 

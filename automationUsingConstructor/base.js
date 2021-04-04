@@ -1,14 +1,15 @@
 const { Builder, By, Key, until } = require('selenium-webdriver');
 require("chromedriver");
+var driver = new Builder().forBrowser('chrome').build();
 
 class BasePage {
 
     constructor() {
-        this.driver = new Builder().forBrowser('chrome').build();
+        global.driver = driver
     }
 
     navigateToTheTestRoom() {
-        this.driver.get('https://www.thetestroom.com/webapp/');
+        driver.get('https://www.thetestroom.com/webapp/');
     }
 }
 
