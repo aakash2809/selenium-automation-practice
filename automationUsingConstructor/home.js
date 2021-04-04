@@ -7,6 +7,7 @@ class HomePage extends BasePage {
 
     clickOnAdotionLink() {
         driver.findElement(By.css('[name=nav_adopt]')).click();
+        return require('./adoption');
     }
 }
 

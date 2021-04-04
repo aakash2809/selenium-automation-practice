@@ -1,4 +1,4 @@
-const { Builder, By, Key, until } = require('selenium-webdriver');
+const { Builder } = require('selenium-webdriver');
 require("chromedriver");
 var driver = new Builder().forBrowser('chrome').build();
 

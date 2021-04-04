@@ -1,4 +1,4 @@
-const home = require('./home');
 var HomePage = require('./home')
 HomePage.navigateToTheTestRoom();
-HomePage.clickOnAdotionLink();
+var adoptionPage = HomePage.clickOnAdotionLink();
+adoptionPage.navigateToTheTestRoom();
