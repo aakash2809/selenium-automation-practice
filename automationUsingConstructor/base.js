@@ -1,5 +1,6 @@
 const { Builder } = require('selenium-webdriver');
-require("chromedriver");
+require('chromedriver');
+const properties = require('./properties');
 var driver = new Builder().forBrowser('chrome').build();
 
 class BasePage {
@@ -9,7 +10,7 @@ class BasePage {
     }
 
     navigateToTheTestRoom() {
-        driver.get('https://www.thetestroom.com/webapp/');
+        driver.get(properties.TTR);
     }
 }
 
