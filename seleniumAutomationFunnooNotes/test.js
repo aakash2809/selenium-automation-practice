@@ -1,8 +1,8 @@
 let app = require('./appFunctions');
 
 async function startapp() {
-    await app.fundooRegister();
-    // await app.switchRegisterToLoginPage();
+    await app.fundooRegister('http://localhost:8081/register');
+    //await app.switchRegisterToLoginPage();
     //await app.fundooLogin();
     //await app.switchLoginToRegisterPage();
     //await app.dashboardCreateNote();
